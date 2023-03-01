@@ -1,57 +1,52 @@
 body {
-  font-family: 'Manrope', Courier, monospace;
-  min-width: 1400px;
-  margin: 0 auto;
+  width: 100%;
+  font-family: "Manrope", Courier, monospace;
+}
 
+.wrapper {
+  margin: 0 auto;
+  width: 1400px;
 }
 
 .container {
+  /* margin-bottom: 150px; */
+  margin: 0 auto 150px; /*выравниваем контейнер по центру с автоматическим внешними отступами*/
   width: 1150px; /*ширина контейнера*/
-  margin: 0 auto; /*выравниваем контейнер по центру с автоматическим внешними отступами*/
-  box-sizing: border-box;
-}
-
-.header-wraper {
-  margin-bottom: 150px;
+  box-sizing: border-box; /*можно сразу это свойство вставить reset.css делает контейнер именно заданного размера*/
 }
 
 h1 {
+  margin-bottom: 30px;
+  width: 990px;
+  height: 120px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 400;
-  width: 990px;
-  height: 120px;
-  margin-bottom: 30px;
 }
 
 .who-we-are-wraper {
-  background-image: url(../resurses/Rectangle1.jpg);
   width: 1150px;
-  height: 500px; 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: end;
+  height: 500px;
+  background-image: url(../resurses/about-us.jpg);
+  position: relative;
 }
 
-
 .who-we-are {
+  width: 450px;
+  height: 81px;
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
   font-size: 20px;
   line-height: 27px;
   font-weight: 400;
-  width: 450px;
-  height: 81px;
-  color: #FFFFFF;
-  padding-left: 40px;
-  padding-bottom: 40px;
-
-} 
+  color: #ffffff;
+}
 
 .about-us-wraper {
   width: 1051px;
   max-width: 100%;
   height: 518px;
-  margin-bottom: 150px;
 }
 
 .about-us {
@@ -61,24 +56,24 @@ h1 {
 }
 
 .about-us-text {
+  margin-bottom: 30px;
   font-size: 45px;
   line-height: 61px;
   font-weight: 400;
-  margin-bottom: 30px;
-  letter-spacing: -0.03em /*растояние между буквами или пробелами (-0.03em относительная величина)*/
+  letter-spacing: -0.03em; /*растояние между буквами или пробелами (-0.03em относительная величина)*/
 }
 
 .btn-services {
   display: block;
   width: 255px;
   height: 67px;
+  background-color: #ad1818;
+  border-radius: 5px;
   font-size: 20px;
   text-align: center;
   line-height: 67px;
-  border-radius: 5px;
   text-decoration: none;
   color: white;
-  background-color: #AD1818;
 }
 
 .project {
@@ -92,28 +87,26 @@ h1 {
 }
 
 .img-project {
+  margin-bottom: 15px;
   width: 1150px;
   height: 450px;
-  margin-bottom: 15px;
 }
 
 .project-name {
+  margin-bottom: 15px;
   width: 542px;
   height: 41px;
   font-size: 30px;
   line-height: 41px;
   letter-spacing: -0.03em;
-  margin-bottom: 15px;
 }
 
 .btn-more-details {
   display: block;
-  /* width: 127px;
-  height: 27px; */
   font-size: 20px;
   line-height: 27px;
   text-decoration: none;
-  color: #AD1818;
+  color: #ad1818;
   transition: all 0.5s; /*приеняем к всему контенту время изменения при наведении курсора*/
 }
 
@@ -123,74 +116,96 @@ h1 {
 }
 
 .btn-all-project {
+  width: 100%;
   display: block;
   height: 153px;
   font-size: 30px;
   line-height: 153px;
-  text-align: center;
-  border: 1px solid #AD1818;
+  border: 1px solid #ad1818;
   border-radius: 5px;
+  text-align: center;
   text-decoration: none;
-  color: #AD1818;
+  color: #ad1818;
   transition: all 0.5s;
 }
 
 .btn-all-project:hover {
-  background-color: #AD1818;
-  color: #FFFFFF;
+  background-color: #ad1818;
+  color: #ffffff;
 }
 
 .wraper-container {
   background-color: black;
-  margin-top: 150px;
-  padding-bottom: 90px;
-  /* min-width: 1400px; */
+  padding-bottom: 150px;
 }
 
-.services-title {
+.container_last {
+  margin-bottom: 0;
+}
+
+.service-title {
+  margin-bottom: 34px;
+  padding-top: 151px;
   font-size: 18px;
   line-height: 25px;
-  padding-top: 151px;
-  margin-bottom: 34px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.services {
+.service {
   margin-bottom: 60px;
 }
 
-.img-services {
+.service:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.img-service {
+  margin-bottom: 15px;
   width: 1150px;
   height: 270px;
-  margin-bottom: 15px;
 }
 
-.services-name {
+.service-name {
   font-size: 30px;
   line-height: 41px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.project-img-wraper {
+.project-forest-landscape {
   background-image: url(../resurses/project-img.jpg);
   width: 1400px;
   height: 717px;
-  /* max-width: 100%;
-  max-height: 100%; */
+  position: relative;
+}
+
+.project-forest-landscape p {
+  width: 443px;
+  position: absolute;
+  left: 125px;
+  bottom: 60px;
+  font-size: 30px;
+  line-height: 41px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+/* НИЖЕ стили для способа через FLEX */
+
+/* .project-img-wraper {
+  background-image: url(../resurses/project-img.jpg);
+  width: 1400px;
+  height: 717px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: end;
-
-
 }
 
 .project-img-text {
+  padding: 0 0 60px 125px;
   width: 443px;
-  height: 82px;
   font-size: 30px;
   line-height: 41px;
   letter-spacing: -0.03em;
-  padding: 0 0 60px 125px;
-  color: #FFFFFF;
-}
+  color: #ffffff;
+} */
