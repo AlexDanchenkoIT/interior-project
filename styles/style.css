@@ -1,15 +1,16 @@
 body {
   width: 100%;
   font-family: "Manrope", Courier, monospace;
+  background: #f5f5f5;
 }
 
 .wrapper {
   margin: 0 auto;
   width: 1400px;
+  background: #ffffff;
 }
 
 .container {
-  /* margin-bottom: 150px; */
   margin: 0 auto 150px; /*выравниваем контейнер по центру с автоматическим внешними отступами*/
   width: 1150px; /*ширина контейнера*/
   box-sizing: border-box; /*можно сразу это свойство вставить reset.css делает контейнер именно заданного размера*/
@@ -18,35 +19,36 @@ body {
 h1 {
   margin-bottom: 30px;
   width: 990px;
-  height: 120px;
   font-size: 60px;
-  line-height: 60px;
-  font-weight: 400;
+  letter-spacing: -0.03em;
 }
 
 .who-we-are-wraper {
   width: 1150px;
   height: 500px;
-  background-image: url(../resurses/about-us.jpg);
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../resurses/about-us.jpg);
   position: relative;
 }
 
 .who-we-are {
-  width: 450px;
-  height: 81px;
+  width: 430px;
   position: absolute;
   left: 40px;
   bottom: 40px;
   font-size: 20px;
   line-height: 27px;
-  font-weight: 400;
+  letter-spacing: -0.03em;
   color: #ffffff;
 }
 
 .about-us-wraper {
   width: 1051px;
   max-width: 100%;
-  height: 518px;
 }
 
 .about-us {
@@ -59,14 +61,12 @@ h1 {
   margin-bottom: 30px;
   font-size: 45px;
   line-height: 61px;
-  font-weight: 400;
   letter-spacing: -0.03em; /*растояние между буквами или пробелами (-0.03em относительная величина)*/
 }
 
 .btn-services {
-  display: block;
+  display: inline-block;
   width: 255px;
-  height: 67px;
   background-color: #ad1818;
   border-radius: 5px;
   font-size: 20px;
@@ -94,15 +94,13 @@ h1 {
 
 .project-name {
   margin-bottom: 15px;
-  width: 542px;
-  height: 41px;
   font-size: 30px;
   line-height: 41px;
   letter-spacing: -0.03em;
 }
 
 .btn-more-details {
-  display: block;
+  display: inline-block;
   font-size: 20px;
   line-height: 27px;
   text-decoration: none;
@@ -118,7 +116,6 @@ h1 {
 .btn-all-project {
   width: 100%;
   display: block;
-  height: 153px;
   font-size: 30px;
   line-height: 153px;
   border: 1px solid #ad1818;
@@ -136,7 +133,7 @@ h1 {
 
 .wraper-container {
   background-color: black;
-  padding-bottom: 150px;
+  padding: 150px 0;
 }
 
 .container_last {
@@ -145,7 +142,6 @@ h1 {
 
 .service-title {
   margin-bottom: 34px;
-  padding-top: 151px;
   font-size: 18px;
   line-height: 25px;
   color: #ffffff;
@@ -161,8 +157,6 @@ h1 {
 
 .img-service {
   margin-bottom: 15px;
-  width: 1150px;
-  height: 270px;
 }
 
 .service-name {
@@ -172,8 +166,12 @@ h1 {
 }
 
 .project-forest-landscape {
-  background-image: url(../resurses/project-img.jpg);
-  width: 1400px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0.52%,
+      rgba(0, 0, 0, 0.4) 82.81%
+    ),
+    url(../resurses/project-img.jpg);
   height: 717px;
   position: relative;
 }
@@ -188,24 +186,3 @@ h1 {
   letter-spacing: -0.03em;
   color: #ffffff;
 }
-
-/* НИЖЕ стили для способа через FLEX */
-
-/* .project-img-wraper {
-  background-image: url(../resurses/project-img.jpg);
-  width: 1400px;
-  height: 717px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: end;
-}
-
-.project-img-text {
-  padding: 0 0 60px 125px;
-  width: 443px;
-  font-size: 30px;
-  line-height: 41px;
-  letter-spacing: -0.03em;
-  color: #ffffff;
-} */
