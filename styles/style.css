@@ -1,26 +1,76 @@
+html {
+  scroll-behavior: smooth; /*плавный скрол*/
+}
+
 body {
   width: 100%;
+  font-weight: 400;
   font-family: "Manrope", Courier, monospace;
-  background: #f5f5f5;
 }
 
 .wrapper {
+  width: 100%;
   margin: 0 auto;
-  width: 1400px;
+  min-width: 1400px;
   background: #ffffff;
 }
 
-.container {
+.nav-container {
+  width: 1150px;
+  margin: 0 auto;
+  padding-top: 31px;
+  padding-bottom: 69px;
+}
+
+.logo-link {
+  display: inline-block;
+  margin-right: 498px;
+}
+
+.logo {
+  display: block;
+  width: 127px;
+  height: 22px;
+}
+
+.nav {
+  display: inline-block;
+}
+
+.nav__link {
+  display: inline-block;
+  margin-left: 55px;
+  height: 25px;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #121212;
+  letter-spacing: -0.17px;
+  transition: all 0.5s;
+}
+
+.nav__link:hover {
+  border-bottom: 1px solid #000000;
+  opacity: 0.5; /*прозрачгость текста*/
+}
+
+section {
   margin: 0 auto 150px; /*выравниваем контейнер по центру с автоматическим внешними отступами*/
   width: 1150px; /*ширина контейнера*/
-  box-sizing: border-box; /*можно сразу это свойство вставить reset.css делает контейнер именно заданного размера*/
+  /* box-sizing: border-box; задан в reset.css делает контейнер именно заданного размера*/
+}
+
+section:nth-last-child(1) {
+  margin-bottom: 157px;
 }
 
 h1 {
   margin-bottom: 30px;
-  width: 990px;
+  width: 956px;
   font-size: 60px;
-  letter-spacing: -0.03em;
+  letter-spacing: -1.8px;
+  font-weight: 400;
+  color: #121212;
 }
 
 .who-we-are-wraper {
@@ -35,7 +85,7 @@ h1 {
   position: relative;
 }
 
-.who-we-are {
+.who-we-are-text {
   width: 430px;
   position: absolute;
   left: 40px;
@@ -55,13 +105,16 @@ h1 {
   margin-bottom: 30px;
   font-size: 18px;
   line-height: 25px;
+  color: #121212;
+  letter-spacing: -0.5px;
 }
 
 .about-us-text {
   margin-bottom: 30px;
   font-size: 45px;
   line-height: 61px;
-  letter-spacing: -0.03em; /*растояние между буквами или пробелами (-0.03em относительная величина)*/
+  letter-spacing: -1.33px; /*растояние между буквами или пробелами */
+  padding-left: 2px;
 }
 
 .btn-services {
@@ -74,6 +127,7 @@ h1 {
   line-height: 67px;
   text-decoration: none;
   color: white;
+  letter-spacing: -0.5px;
 }
 
 .project {
@@ -84,27 +138,29 @@ h1 {
   margin-bottom: 30px;
   font-size: 18px;
   line-height: 25px;
+  letter-spacing: -0.5px;
 }
 
-.img-project {
+.project__img {
   margin-bottom: 15px;
   width: 1150px;
   height: 450px;
 }
 
-.project-name {
+.project__name {
   margin-bottom: 15px;
   font-size: 30px;
   line-height: 41px;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.9px;
 }
 
-.btn-more-details {
+.project__btn-more-details {
   display: inline-block;
   font-size: 20px;
-  line-height: 27px;
+  line-height: 24px;
   text-decoration: none;
   color: #ad1818;
+  letter-spacing: -0.3px;
 }
 
 .btn-all-project {
@@ -117,6 +173,7 @@ h1 {
   text-align: center;
   text-decoration: none;
   color: #ad1818;
+  letter-spacing: -0.8px;
   transition: all 0.5s;
 }
 
@@ -125,19 +182,25 @@ h1 {
   color: #ffffff;
 }
 
-.wraper-container {
-  background-color: black;
-  padding: 150px 0;
+.section-black {
+  width: 100%;
+  margin-bottom: 0;
+  padding: 150px 125px;
+  min-width: 1400px;
+  background-color: #121212;
 }
 
-.container_last {
-  margin-bottom: 0;
+.services {
+  margin: 0 auto;
+  width: 1150px;
 }
 
 .service-title {
-  margin-bottom: 34px;
+  margin: 0 auto 34px;
+  width: 1150px;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
   color: #ffffff;
 }
 
@@ -149,28 +212,35 @@ h1 {
   margin-bottom: 0;
 }
 
-.img-service {
+.service__img {
   margin-bottom: 15px;
 }
 
-.service-name {
+.service__name {
   font-size: 30px;
-  line-height: 41px;
+  line-height: 38px;
   color: #ffffff;
+  letter-spacing: -0.8px;
+  padding-left: 3px;
 }
 
-.project-forest-landscape {
+.image-forest-landscape {
+  margin-bottom: 186px;
+  width: 100%;
+  height: 717px;
+  position: relative;
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 0.52%,
       rgba(0, 0, 0, 0.4) 82.81%
     ),
     url(../resurses/project-img.jpg);
-  height: 717px;
-  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover; /*картинка будет занимать всю ширину блока, значение contain вписывается без потери пропорций*/
+  background-position: 50%; /*позиция картинки 50% это центр картинки*/
 }
 
-.project-forest-landscape p {
+.image-forest-landscape p {
   width: 443px;
   position: absolute;
   left: 125px;
@@ -179,4 +249,109 @@ h1 {
   line-height: 41px;
   letter-spacing: -0.03em;
   color: #ffffff;
+}
+
+.contacts {
+  position: relative;
+}
+
+.contacts::before {
+  position: absolute;
+  left: 0;
+  bottom: 37px;
+  content: "";
+  width: 13px;
+  height: 25px;
+  background-image: url(../resurses/icone-fone.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.contacts-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: -0.9px;
+}
+
+.contacts-for-communication {
+  margin-top: 32px;
+}
+
+.fone {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.fone-link {
+  text-decoration: none;
+  color: #121212;
+  letter-spacing: -1.1px;
+}
+
+.mail {
+  padding-top: 30px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 57px;
+}
+
+.mail-link {
+  text-decoration: none;
+  color: #121212;
+  border-bottom: 2px solid #121212;
+  opacity: 0.5;
+  letter-spacing: -1.8px;
+}
+
+footer {
+  width: 100%;
+  min-width: 1400px;
+  background-color: #121212;
+}
+
+.footer-nav {
+  margin: 0 auto;
+  padding-top: 73px;
+  width: 460px;
+}
+
+.footer__link {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.55px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.footer__link:hover {
+  opacity: 0.5;
+}
+
+.footer__link:nth-child(1) {
+  margin-right: 51px;
+}
+
+.footer__link:nth-child(2) {
+  margin-right: 52px;
+}
+
+.footer__link:nth-child(3) {
+  margin-right: 54px;
+}
+
+.footer-text {
+  padding: 87px 0 30px 6px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.6px;
+  opacity: 0.5;
 }
