@@ -18,13 +18,13 @@ body {
 .nav-container {
   width: 1150px;
   margin: 0 auto;
-  padding-top: 31px;
+  padding-top: 33px;
   padding-bottom: 69px;
 }
 
 .logo-link {
   display: inline-block;
-  margin-right: 498px;
+  margin-right: 501px;
 }
 
 .logo {
@@ -39,14 +39,14 @@ body {
 
 .nav__link {
   display: inline-block;
+  vertical-align: bottom;
   margin-left: 55px;
   height: 25px;
   font-size: 18px;
   line-height: 25px;
   text-decoration: none;
   color: #121212;
-  letter-spacing: -0.17px;
-  transition: all 0.5s;
+  letter-spacing: -0.3px;
 }
 
 .nav__link:hover {
@@ -97,6 +97,7 @@ h1 {
 }
 
 .about-us-wraper {
+  padding-top: 2px;
   width: 1051px;
   max-width: 100%;
 }
@@ -113,7 +114,7 @@ h1 {
   margin-bottom: 30px;
   font-size: 45px;
   line-height: 61px;
-  letter-spacing: -1.33px; /*растояние между буквами или пробелами */
+  letter-spacing: -0.03em; /*растояние между буквами или пробелами */
   padding-left: 2px;
 }
 
@@ -135,20 +136,20 @@ h1 {
 }
 
 .project-title {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   font-size: 18px;
   line-height: 25px;
   letter-spacing: -0.5px;
 }
 
 .project__img {
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   width: 1150px;
   height: 450px;
 }
 
 .project__name {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   font-size: 30px;
   line-height: 41px;
   letter-spacing: -0.9px;
@@ -156,11 +157,12 @@ h1 {
 
 .project__btn-more-details {
   display: inline-block;
+  padding-left: 1px;
   font-size: 20px;
   line-height: 24px;
   text-decoration: none;
   color: #ad1818;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.5px;
 }
 
 .btn-all-project {
@@ -200,8 +202,9 @@ h1 {
   width: 1150px;
   font-size: 18px;
   line-height: 26px;
-  letter-spacing: 0.2px;
+  letter-spacing: -0.4px;
   color: #ffffff;
+  padding-left: 2px;
 }
 
 .service {
@@ -214,14 +217,15 @@ h1 {
 
 .service__img {
   margin-bottom: 15px;
+  margin-left: 1px;
 }
 
 .service__name {
   font-size: 30px;
   line-height: 38px;
   color: #ffffff;
-  letter-spacing: -0.8px;
-  padding-left: 3px;
+  letter-spacing: -0.03em;
+  padding-left: 4px;
 }
 
 .image-forest-landscape {
@@ -240,10 +244,16 @@ h1 {
   background-position: 50%; /*позиция картинки 50% это центр картинки*/
 }
 
+.wraper-text {
+  margin: 0 auto;
+  position: relative;
+  width: 1150px;
+  height: 717px;
+}
+
 .image-forest-landscape p {
   width: 443px;
   position: absolute;
-  left: 125px;
   bottom: 60px;
   font-size: 30px;
   line-height: 41px;
@@ -257,7 +267,7 @@ h1 {
 
 .contacts::before {
   position: absolute;
-  left: 0;
+  left: 1px;
   bottom: 37px;
   content: "";
   width: 13px;
@@ -273,7 +283,7 @@ h1 {
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  letter-spacing: -0.9px;
+  letter-spacing: -0.03em;
 }
 
 .contacts-for-communication {
@@ -293,7 +303,7 @@ h1 {
 }
 
 .mail {
-  padding-top: 30px;
+  padding-top: 31px;
   font-weight: 400;
   font-size: 60px;
   line-height: 57px;
@@ -304,7 +314,7 @@ h1 {
   color: #121212;
   border-bottom: 2px solid #121212;
   opacity: 0.5;
-  letter-spacing: -1.8px;
+  letter-spacing: -0.03em;
 }
 
 footer {
@@ -339,15 +349,15 @@ footer {
 }
 
 .footer__link:nth-child(2) {
-  margin-right: 52px;
+  margin-right: 53px;
 }
 
 .footer__link:nth-child(3) {
-  margin-right: 54px;
+  margin-right: 53px;
 }
 
 .footer-text {
-  padding: 87px 0 30px 6px;
+  padding: 86px 0 30px 6px;
   text-align: center;
   color: #ffffff;
   font-size: 20px;
