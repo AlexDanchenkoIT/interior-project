@@ -33,7 +33,7 @@ body {
   height: 22px;
 }
 
-.nav {
+nav {
   display: inline-block;
 }
 
@@ -61,7 +61,7 @@ section {
 }
 
 section:nth-last-child(1) {
-  margin-bottom: 157px;
+  margin-bottom: 162px;
 }
 
 h1 {
@@ -157,9 +157,8 @@ h1 {
 
 .project__btn-more-details {
   display: inline-block;
-  padding-left: 1px;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 25px;
   text-decoration: none;
   color: #ad1818;
   letter-spacing: -0.5px;
@@ -169,7 +168,7 @@ h1 {
   width: 100%;
   display: block;
   font-size: 30px;
-  line-height: 153px;
+  line-height: 150px;
   border: 1px solid #ad1818;
   border-radius: 5px;
   text-align: center;
@@ -325,7 +324,7 @@ footer {
 
 .footer-nav {
   margin: 0 auto;
-  padding-top: 73px;
+  padding-top: 61px;
   width: 460px;
 }
 
@@ -365,3 +364,4 @@ footer {
   letter-spacing: -0.6px;
   opacity: 0.5;
 }
+
