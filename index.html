@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>МЕТРИКА</title>
-
-    <link rel="stylesheet" href="styles/reset.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,23 +12,24 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <div class="nav-container">
-        <a class="logo-link" href="/">
-          <img class="logo" src="resurses/logo.png" alt="логотип" />
-        </a>
-        <nav>
-          <a href="#about-us" class="nav__link">О НАС</a>
-          <a href="#projects" class="nav__link">ПРОЕКТЫ</a>
-          <a href="#services" class="nav__link">УСЛУГИ</a>
-          <a href="#contacts" class="nav__link">КОНТАКТЫ</a>
-        </nav>
-      </div>
-      <main>
-        <section>
+    <!-- <header class="nav-container">
+      <a class="logo-link" href="/">
+        <img class="logo" src="resurses/logo.png" alt="логотип" />
+      </a>
+      <nav class="nav">
+        <a href="#about-us" class="nav__link">О НАС</a>
+        <a href="#projects" class="nav__link">ПРОЕКТЫ</a>
+        <a href="#services" class="nav__link">УСЛУГИ</a>
+        <a href="#contacts" class="nav__link">КОНТАКТЫ</a>
+      </nav>
+    </header> -->
+    <main>
+      <section>
+        <div class="container">
           <h1>Современные и стильные интерьеры для комфортной жизни</h1>
           <div class="who-we-are-wraper">
             <p class="who-we-are-text">
@@ -37,25 +37,24 @@
               занимающихся разработкой и реализацией дизайн-проектов
             </p>
           </div>
-        </section>
-        <section>
-          <div class="about-us-wraper">
-            <h2 class="about-us" id="about-us">О НАС</h2>
-            <!-- зададим потом это в навигации и футере <a href="#part1">О НАС</a> якорная -->
-            <p class="about-us-text">
-              Студия основана в 2011 году. Полностью отдаемся проектированию и
-              реализации интерьеров. К нам обращаются за уютом, индивидуальными
-              решениями и практичностью. Находим конструктивные решения для
-              каждого интерьера, вплоть до каждой детали — нацелены на
-              результат.
-            </p>
-            <a class="btn-services" href="#services">Посмотреть услуги</a>
-            <!-- дальше по тексту (в блоке услуги) зададим <h2 id="part3">УСЛУГИ</h2> путь куда ведет якорная ссылка -->
-          </div>
-        </section>
-        <section>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h2 class="about-us" id="about-us">О НАС</h2>
+          <p class="about-us-text">
+            Студия основана в 2011 году. Полностью отдаемся проектированию и
+            реализации интерьеров. К нам обращаются за уютом, индивидуальными
+            решениями и практичностью. Находим конструктивные решения для
+            каждого интерьера, вплоть до каждой детали — нацелены на
+            результат.
+          </p>
+          <a class="btn-services" href="#services">Посмотреть услуги</a>
+        </div>
+      </section>
+      <section>
+        <div class="container">
           <h2 class="project-title" id="projects">ПРОЕКТЫ</h2>
-          <!-- зададим потом это в навигации и футере <a href="#part2">ПРОЕКТЫ</a> -->
           <ul class="projects">
             <li class="project">
               <img
@@ -86,78 +85,78 @@
             </li>
           </ul>
           <a class="btn-all-project" href="/">Смотреть все проекты</a>
-        </section>
-        <section class="section-black">
-          <h2 class="service-title" id="services">УСЛУГИ</h2>
-          <ul class="services">
-            <li class="service">
-              <img
-                class="service__img"
-                src="resurses/service1.jpg"
-                alt="карандаш лежит на чертеже"
-              />
-              <p class="service__name">Планировочное решение — от 2500₽/м²</p>
-            </li>
-            <li class="service">
-              <img
-                class="service__img"
-                src="resurses/service2.jpg"
-                alt="разноцветные папки"
-              />
-              <p class="service__name">Дизайн-проект — от 3000₽/м²</p>
-            </li>
-            <li class="service">
-              <img
-                class="service__img"
-                src="resurses/service3.jpg"
-                alt="чертеж, линейка, рука человека с карандашом"
-              />
-              <p class="service__name">Авторский надзор — от 30 000₽ в месяц</p>
-            </li>
-            <li class="service">
-              <img
-                class="service__img"
-                src="resurses/service4.jpg"
-                alt="палеты с продукцией расположены на полках"
-              />
-              <p class="service__name">
-                Комплектация — 5% от стоимости спецификации
-              </p>
-            </li>
-          </ul>
-        </section>
-        <section class="image-forest-landscape">
-          <div class="wraper-text">
-            <p>Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж</p>
-          </div>
-        </section>
-        <section>
-          <div id="contacts" class="contacts">
-            <h2 class="contacts-text">Контакты</h2>
-          </div>
-          <div class="contacts-for-communication">
-            <p class="fone">
-              <a class="fone-link" href="tel:+7 935 895-45-35"
-                >+7 935  895-45-35
-              </a>
-            </p>
-            <p class="mail">
-              <a class="mail-link" href="mailto:hello@mail.com"
-                >hello@mail.com</a
-              >
-            </p>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <div class="footer-nav">
-          <a href="#about-us" class="footer__link">О НАС</a>
-          <a href="#projects" class="footer__link">ПРОЕКТЫ</a>
-          <a href="#services" class="footer__link">УСЛУГИ</a>
-          <a href="#contacts" class="footer__link">КОНТАКТЫ</a>
         </div>
-        <p class="footer-text">студия дизайна интерьера Метрика — 2023</p>
-      </footer>
-    </div>
+      </section>
+      <!-- <section class="section-black">
+        <h2 class="service-title" id="services">УСЛУГИ</h2>
+        <ul class="services">
+          <li class="service">
+            <img
+              class="service__img"
+              src="resurses/service1.jpg"
+              alt="карандаш лежит на чертеже"
+            />
+            <p class="service__name">Планировочное решение — от 2500₽/м²</p>
+          </li>
+          <li class="service">
+            <img
+              class="service__img"
+              src="resurses/service2.jpg"
+              alt="разноцветные папки"
+            />
+            <p class="service__name">Дизайн-проект — от 3000₽/м²</p>
+          </li>
+          <li class="service">
+            <img
+              class="service__img"
+              src="resurses/service3.jpg"
+              alt="чертеж, линейка, рука человека с карандашом"
+            />
+            <p class="service__name">Авторский надзор — от 30 000₽ в месяц</p>
+          </li>
+          <li class="service">
+            <img
+              class="service__img"
+              src="resurses/service4.jpg"
+              alt="палеты с продукцией расположены на полках"
+            />
+            <p class="service__name">
+              Комплектация — 5% от стоимости спецификации
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="image-forest-landscape">
+        <div class="wraper-text">
+          <p>Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж</p>
+        </div>
+      </section>
+      <section>
+        <div id="contacts" class="contacts">
+          <h2 class="contacts-text">Контакты</h2>
+        </div>
+        <div class="contacts-for-communication">
+          <p class="fone">
+            <a class="fone-link" href="tel:+7 935  895-45-35"
+              >+7 935 895-45-35
+            </a>
+          </p>
+          <p class="mail">
+            <a class="mail-link" href="mailto:hello@mail.com"
+              >hello@mail.com</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-nav">
+        <a href="#about-us" class="footer__link">О НАС</a>
+        <a href="#projects" class="footer__link">ПРОЕКТЫ</a>
+        <a href="#services" class="footer__link">УСЛУГИ</a>
+        <a href="#contacts" class="footer__link">КОНТАКТЫ</a>
+      </div>
+      <p class="footer-text">студия дизайна интерьера Метрика — 2023</p>
+    </footer> -->
   </body>
 </html>
