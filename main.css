@@ -1,9 +1,9 @@
-@import "/styles/header.css";
-@import "/styles/intro.css";
-@import "/styles/about-us.css";
-@import "/styles/projects.css";
-@import "/styles/services.css";
-@import "/styles/feedback.css";
+@import "styles/header.css";
+@import "styles/intro.css";
+@import "styles/about-us.css";
+@import "styles/projects.css";
+@import "styles/services.css";
+@import "styles/feedback.css";
 
 html {
   scroll-behavior: smooth; /*плавный скрол*/
