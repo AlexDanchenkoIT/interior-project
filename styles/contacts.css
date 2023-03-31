@@ -1,0 +1,55 @@
+.contacts {
+  position: relative; /*по отношению к кому позициогируем*/
+}
+
+.contacts::before {
+  position: absolute; /*кого позициогируем*/
+  left: 1px;
+  bottom: 37px;
+  content: ""; /*!!!!*/
+  width: 13px; /*!!!!*/
+  height: 25px; /*!!!!*/
+  background-image: url(../resurses/icone-fone.png);
+  background-size: cover; /*!!!!*/
+  background-repeat: no-repeat; /*!!!!*/
+  background-position: 50%; /*!!!! для иконки задаем эти свойства обзвтельно, если размещаем ее как БГ*/
+}
+
+.contacts-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+}
+
+.contacts-for-communication {
+  margin-top: 32px;
+}
+
+.fone {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.fone-link {
+  text-decoration: none;
+  color: #121212;
+  letter-spacing: -1.1px;
+}
+
+.mail {
+  padding-top: 31px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 57px;
+}
+
+.mail-link {
+  text-decoration: none;
+  color: #121212;
+  border-bottom: 2px solid #121212;
+  opacity: 0.5;
+  letter-spacing: -0.03em;
+}

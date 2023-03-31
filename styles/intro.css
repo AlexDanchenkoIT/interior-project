@@ -1,0 +1,67 @@
+.intro-title {
+  margin-bottom: 30px;
+  width: 956px;
+  font-size: 60px;
+  color: #121212;
+}
+
+.intro-img {
+  height: 500px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../resurses/about-us.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro-text {
+  width: 430px;
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+@media (max-width: 1199px) {
+  .intro-title {
+    width: 734px;
+    font-size: 48px;
+  }
+
+  .intro-img {
+    height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .intro-title {
+    margin-bottom: 25px;
+    width: 100%;
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .intro-img {
+    height: 304px;
+  }
+
+  .intro-text {
+    width: 312px;
+    font-size: 16px;
+    line-height: 22px;
+    left: 15px;
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .intro-img {
+    background-image: url(../resurses/about-us-mobile.png);
+  }
+}
