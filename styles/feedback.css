@@ -2,12 +2,6 @@
   margin-bottom: 157px;
 }
 
-.feedback-title {
-  margin-bottom: 30px;
-  font-size: 18px;
-  line-height: 25px;
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -67,8 +61,6 @@
 @media (max-width: 767px) {
   .feedback-title {
     margin-bottom: 22px;
-    font-size: 14px;
-    line-height: 19px;
   }
 
   .row {
