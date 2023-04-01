@@ -4,7 +4,7 @@
 }
 
 .services-wrapper {
-  padding-bottom: 106px;
+  padding-bottom: 95px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -38,8 +38,6 @@
 
 .service-title {
   margin-bottom: 31px;
-  font-size: 18px;
-  line-height: 25px;
   color: #ffffff;
 }
 
@@ -88,20 +86,17 @@
   }
 }
 @media (max-width: 767px) {
+  .service-title {
+    margin-bottom: 20px;
+  }
+
   .services-wrapper {
     row-gap: 67px;
     padding-bottom: 68px;
   }
 
-  .service-title {
-    margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 19px;
-  }
-
   .service {
     width: 100%;
-    /* row-gap: 60px; */
   }
 
   .service__img {
