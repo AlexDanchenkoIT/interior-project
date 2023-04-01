@@ -4,8 +4,6 @@
 
 .project-title {
   margin-bottom: 29px;
-  font-size: 18px;
-  line-height: 25px;
 }
 
 .project__img {
@@ -15,7 +13,7 @@
 }
 
 .project__name {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   font-size: 30px;
   line-height: 41px;
 }
@@ -71,18 +69,16 @@
   }
 }
 @media (max-width: 767px) {
+  .project-title {
+    margin-bottom: 20px;
+  }
+
   .projects {
     margin-bottom: 60px;
   }
 
   .project {
     margin-bottom: 49px;
-  }
-
-  .project-title {
-    margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 19px;
   }
 
   .project__img {
