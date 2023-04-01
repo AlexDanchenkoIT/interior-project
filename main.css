@@ -38,6 +38,13 @@ button {
   letter-spacing: -0.03em;
 }
 
+h2 {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #121212;
+}
+
 .section-black {
   background-color: #121212;
 }
@@ -77,6 +84,12 @@ button {
 }
 
 @media (max-width: 767px) {
+  h2 {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
   .container {
     padding-left: 13px;
     padding-right: 12px;
