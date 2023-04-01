@@ -29,10 +29,15 @@
     width: 690px;
     font-size: 35px;
     line-height: 48px;
-    bottom: 30px;
   }
 }
 @media (max-width: 767px) {
+  .about-us {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
   .about-us-text {
     width: 100%;
     font-size: 22px;
