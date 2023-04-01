@@ -2,6 +2,7 @@
   margin-bottom: 30px;
   width: 956px;
   font-size: 60px;
+  line-height: 60px;
   color: #121212;
 }
 
@@ -31,12 +32,18 @@
 
 @media (max-width: 1199px) {
   .intro-title {
-    width: 734px;
-    font-size: 48px;
+    width: 802px;
+    font-size: 50px;
+    /* line-height: 60px; */
   }
 
   .intro-img {
     height: 400px;
+    background-image: url(../resurses/about-us_tablet.png);
+  }
+
+  .intro-text {
+    bottom: 30px;
   }
 }
 @media (max-width: 767px) {
@@ -44,7 +51,7 @@
     margin-bottom: 25px;
     width: 100%;
     font-size: 30px;
-    line-height: 32px;
+    line-height: 31.62px;
   }
 
   .intro-img {
