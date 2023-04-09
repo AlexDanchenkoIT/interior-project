@@ -1,55 +1,118 @@
-.contacts {
-  position: relative; /*по отношению к кому позициогируем*/
+.contacts-title {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 74px;
 }
 
-.contacts::before {
+.contacts-for-communication {
+  display: flex;
+}
+
+.contact__fone {
+  margin-right: 104px;
+  position: relative;
+}
+
+.contact__fone-link {
+  font-size: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  color: #121212;
+}
+
+.contact__fone:before {
   position: absolute; /*кого позициогируем*/
-  left: 1px;
-  bottom: 37px;
+  top: -50px;
   content: ""; /*!!!!*/
-  width: 13px; /*!!!!*/
-  height: 25px; /*!!!!*/
+  width: 24px; /*!!!!*/
+  height: 24px; /*!!!!*/
   background-image: url(../resurses/icone-fone.png);
   background-size: cover; /*!!!!*/
   background-repeat: no-repeat; /*!!!!*/
   background-position: 50%; /*!!!! для иконки задаем эти свойства обзвтельно, если размещаем ее как БГ*/
 }
 
-.contacts-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  letter-spacing: -0.03em;
+.contact__mail {
+  position: relative;
 }
 
-.contacts-for-communication {
-  margin-top: 32px;
-}
-
-.fone {
-  font-weight: 400;
+.contact__mail-link {
   font-size: 60px;
   line-height: 60px;
-}
-
-.fone-link {
-  text-decoration: none;
-  color: #121212;
-  letter-spacing: -1.1px;
-}
-
-.mail {
-  padding-top: 31px;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 57px;
-}
-
-.mail-link {
   text-decoration: none;
   color: #121212;
   border-bottom: 2px solid #121212;
   opacity: 0.5;
-  letter-spacing: -0.03em;
+}
+
+.contact__mail:before {
+  position: absolute; /*кого позициогируем*/
+  top: -50px;
+  content: ""; /*!!!!*/
+  width: 24px; /*!!!!*/
+  height: 24px; /*!!!!*/
+  background-image: url(../resurses/icone-mail.png);
+  background-size: cover; /*!!!!*/
+  background-repeat: no-repeat; /*!!!!*/
+  background-position: 50%; /*!!!! для иконки задаем эти свойства обязательно, если размещаем ее как БГ*/
+}
+
+@media (max-width: 1199px) {
+  .contact__fone {
+    margin-right: 114px;
+  }
+
+  .contact__fone-link,
+  .contact__mail-link {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact__fone {
+    margin-right: 85px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts-title {
+    font-size: 14px;
+    line-height: 19x;
+    margin-bottom: 58px;
+  }
+
+  .contacts-for-communication {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+  }
+
+  .contact__fone {
+    margin-right: 0;
+  }
+
+  .contact__fone-link {
+    font-size: 35px;
+    line-height: 46px;
+  }
+
+  .contact__fone:before {
+    top: -50px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .contact__mail-link {
+    font-size: 40px;
+    line-height: 46px;
+    border-bottom: none;
+    opacity: 1;
+  }
+
+  .contact__mail:before {
+    top: -40px;
+    width: 18px;
+    height: 18px;
+  }
 }
