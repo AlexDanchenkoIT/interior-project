@@ -4,6 +4,9 @@
 @import "styles/projects.css";
 @import "styles/services.css";
 @import "styles/feedback.css";
+@import "styles/gallery.css";
+@import "styles/contacts.css";
+@import "styles/footer.css";
 
 html {
   scroll-behavior: smooth; /*плавный скрол*/
@@ -21,7 +24,9 @@ body {
 .intro-inner,
 .about-us-inner,
 .projects-inner,
-.services-inner {
+.services-inner,
+.gallery-section,
+.contacts-inner {
   margin-bottom: 150px;
 }
 
@@ -62,12 +67,17 @@ h2 {
   }
 
   .about-us-inner,
-  .feedback-inner {
+  .feedback-inner,
+  .gallery-section {
     margin-bottom: 120px;
   }
 
   .projects-inner {
     margin-bottom: 102px;
+  }
+
+  .contacts-inner {
+    margin-bottom: 80px;
   }
 
   .services-inner {
@@ -98,7 +108,8 @@ h2 {
   .intro-inner,
   .about-us-inner,
   .services-inner,
-  .feedback-inner {
+  .feedback-inner,
+  .gallery-section {
     margin-bottom: 80px;
   }
 
