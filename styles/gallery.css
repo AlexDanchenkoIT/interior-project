@@ -47,32 +47,29 @@
   width: 100%;
 }
 
-.bedroom {
-  background-image: url(../resurses/bedroom.png);
+.bedroom,
+.living-room,
+.kitchen-living-room,
+.kitchen {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.bedroom {
+  background-image: url(../resurses/bedroom.png);
 }
 
 .living-room {
   background-image: url(../resurses/living-room.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .kitchen-living-room {
   background-image: url(../resurses/kitchen-living-room.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .kitchen {
   background-image: url(../resurses/kitchen.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .gallery__controls-wrapper {

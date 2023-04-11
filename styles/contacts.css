@@ -1,15 +1,15 @@
-.contacts-title {
+.contacts__title {
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 74px;
 }
 
-.contacts-for-communication {
+.contact__comunication {
   display: flex;
+  gap: 104px;
 }
 
 .contact__fone {
-  margin-right: 104px;
   position: relative;
 }
 
@@ -20,16 +20,24 @@
   color: #121212;
 }
 
-.contact__fone:before {
-  position: absolute; /*кого позициогируем*/
+.contact__fone:before,
+.contact__mail:before {
+  position: absolute;
   top: -50px;
-  content: ""; /*!!!!*/
-  width: 24px; /*!!!!*/
-  height: 24px; /*!!!!*/
-  background-image: url(../resurses/icone-fone.png);
-  background-size: cover; /*!!!!*/
-  background-repeat: no-repeat; /*!!!!*/
-  background-position: 50%; /*!!!! для иконки задаем эти свойства обзвтельно, если размещаем ее как БГ*/
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.contact__fone:before {
+  background-image: url("../resurses/icone-fone.png");
+}
+
+.contact__mail:before {
+  background-image: url(../resurses/icone-mail.png);
 }
 
 .contact__mail {
@@ -45,21 +53,9 @@
   opacity: 0.5;
 }
 
-.contact__mail:before {
-  position: absolute; /*кого позициогируем*/
-  top: -50px;
-  content: ""; /*!!!!*/
-  width: 24px; /*!!!!*/
-  height: 24px; /*!!!!*/
-  background-image: url(../resurses/icone-mail.png);
-  background-size: cover; /*!!!!*/
-  background-repeat: no-repeat; /*!!!!*/
-  background-position: 50%; /*!!!! для иконки задаем эти свойства обязательно, если размещаем ее как БГ*/
-}
-
 @media (max-width: 1199px) {
-  .contact__fone {
-    margin-right: 114px;
+  .contact__comunication {
+    gap: 114px;
   }
 
   .contact__fone-link,
@@ -69,9 +65,9 @@
   }
 }
 
-@media (max-width: 800px) {
-  .contact__fone {
-    margin-right: 85px;
+@media (max-width: 805px) {
+  .contact__comunication {
+    gap: 75px;
   }
 }
 
@@ -82,7 +78,7 @@
     margin-bottom: 58px;
   }
 
-  .contacts-for-communication {
+  .contact__comunication {
     display: flex;
     flex-direction: column;
     gap: 58px;
