@@ -1,4 +1,5 @@
 @import "styles/header.css";
+@import "styles/burger.css";
 @import "styles/intro.css";
 @import "styles/about-us.css";
 @import "styles/projects.css";
@@ -31,8 +32,8 @@ body {
   margin-bottom: 150px;
 }
 
-.intro-inner {
-  margin-top: 128px; /* Изменить как будет хедер  */
+.header-inner {
+  margin-bottom: 70px;
 }
 
 h1,
@@ -62,6 +63,10 @@ h2 {
     padding-right: 17px;
   }
 
+  .header-inner {
+    margin-bottom: 73px;
+  }
+
   .intro-inner,
   .services-inner {
     margin-bottom: 117px;
@@ -85,10 +90,6 @@ h2 {
     padding-bottom: 120px;
   }
 
-  .intro-inner {
-    margin-top: 131px; /* Изменить как будет хедер  */
-  }
-
   .about-us-inner {
     padding-left: 3px; /*выравниваем по пиксель перфект*/
   }
@@ -104,6 +105,10 @@ h2 {
   .container {
     padding-left: 13px;
     padding-right: 12px;
+  }
+
+  .header-inner {
+    margin-bottom: 61px;
   }
 
   .intro-inner,

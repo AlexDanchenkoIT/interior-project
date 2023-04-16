@@ -16,17 +16,22 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <!-- <header class="nav-container">
-      <a class="logo-link" href="/">
-        <img class="logo" src="resurses/logo.png" alt="логотип" />
-      </a>
-      <nav class="nav">
-        <a href="#about-us" class="nav__link">О НАС</a>
-        <a href="#projects" class="nav__link">ПРОЕКТЫ</a>
-        <a href="#services" class="nav__link">УСЛУГИ</a>
-        <a href="#contacts" class="nav__link">КОНТАКТЫ</a>
-      </nav>
-    </header> -->
+    <header>
+      <div class="container">
+        <div class="header-inner">
+          <a class="logo-link" href="/">
+            <img class="logo" src="resurses/logo.png" alt="логотип" />
+          </a>
+          <nav class="nav">
+            <a href="#about-us" class="nav__link">О НАС</a>
+            <a href="#projects" class="nav__link">ПРОЕКТЫ</a>
+            <a href="#services" class="nav__link">УСЛУГИ</a>
+            <a href="#contacts" class="nav__link">КОНТАКТЫ</a>
+          </nav>
+          <div class="js-burger-btn burger-btn"></div>
+        </div>
+      </div>
+    </header>
     <main>
       <section>
         <div class="container">
@@ -338,7 +343,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-inner">
-          <nav class="nav">
+          <nav class="footer-nav">
             <a href="#about-us" class="footer__link">О НАС</a>
             <a href="#projects" class="footer__link">ПРОЕКТЫ</a>
             <a href="#services" class="footer__link">УСЛУГИ</a>
@@ -348,7 +353,28 @@
         </div>
       </div>
     </footer>
+    <div class="js-burger burger">
+      <div class="js-burger__content burger__content">
+        <a class="logo-link" href="/">
+          <img class="logo" src="resurses/logo.png" alt="логотип" />
+        </a>
+        <nav class="burger-nav">
+          <a href="#about-us" class="burger-nav__link">О НАС</a>
+          <a href="#projects" class="burger-nav__link">ПРОЕКТЫ</a>
+          <a href="#services" class="burger-nav__link">УСЛУГИ</a>
+          <a href="#contacts" class="burger-nav__link">КОНТАКТЫ</a>
+        </nav>
+        <p class="burger-contacts__title">Для связи:</p>
+        <a class="burger__fone-link" href="tel:+7 935 895-45-35"
+          >+7 935 895-45-35
+        </a>
+        <a class="burger__mail-link" target="_blank" href="https://t.me/Foxpf"
+          >Alex Danchenko
+        </a>
+      </div>
+    </div>
     <script src="gallery.js"></script>
     <script src="popup.js"></script>
+    <script src="burger.js"></script>
   </body>
 </html>

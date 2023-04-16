@@ -7,7 +7,7 @@
   padding-bottom: 30px;
 }
 
-.nav {
+.footer-nav {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,7 @@
     padding-bottom: 28px;
   }
 
-  .nav {
+  .footer-nav {
     width: 281px;
   }
 
