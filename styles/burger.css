@@ -29,10 +29,12 @@
 
 .burger__content {
   padding-top: 80px;
+  padding-bottom: 80px;
   padding-left: 30px;
-  width: 80%;
+  width: 330px;
   height: 100%;
   background-color: #fff;
+  overflow-y: auto;
 }
 
 @media (max-width: 1199px) {
@@ -60,7 +62,7 @@
     right: 20px;
   }
 
-  .logo-link {
+  .burger-logo-link {
     display: block;
     margin-bottom: 50px;
   }
@@ -105,5 +107,11 @@
 
   .burger__fone-link {
     line-height: 46px;
+  }
+}
+
+@media (max-width: 768px) {
+  .burger__content {
+    width: 274px;
   }
 }

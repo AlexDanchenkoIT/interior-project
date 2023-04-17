@@ -7,11 +7,14 @@
   padding-bottom: 30px;
 }
 
-.footer-nav {
+.footer-nav-wrapper {
   margin: 0 auto;
+  width: 450px;
+}
+
+.footer-nav {
   display: flex;
   justify-content: space-between;
-  width: 450px;
 }
 
 .footer__link {
@@ -43,7 +46,7 @@
     padding-bottom: 28px;
   }
 
-  .footer-nav {
+  .footer-nav-wrapper {
     width: 281px;
   }
 

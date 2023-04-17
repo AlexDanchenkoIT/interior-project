@@ -22,18 +22,20 @@
           <a class="logo-link" href="/">
             <img class="logo" src="resurses/logo.png" alt="логотип" />
           </a>
-          <nav class="nav">
-            <a href="#about-us" class="nav__link">О НАС</a>
-            <a href="#projects" class="nav__link">ПРОЕКТЫ</a>
-            <a href="#services" class="nav__link">УСЛУГИ</a>
-            <a href="#contacts" class="nav__link">КОНТАКТЫ</a>
+          <nav>
+            <ul class="nav">
+              <li><a href="#about-us" class="nav__link">О НАС</a></li>
+              <li><a href="#projects" class="nav__link">ПРОЕКТЫ</a></li>
+              <li><a href="#services" class="nav__link">УСЛУГИ</a></li>
+              <li><a href="#contacts" class="nav__link">КОНТАКТЫ</a></li>
+            </ul>
           </nav>
           <div class="js-burger-btn burger-btn"></div>
         </div>
       </div>
       <div class="js-burger burger">
         <div class="js-burger__content burger__content">
-          <a class="logo-link" href="/">
+          <a class="burger-logo-link" href="/">
             <img class="logo" src="resurses/logo.png" alt="логотип" />
           </a>
           <nav>
@@ -163,42 +165,44 @@
           <div class="services-inner">
             <h2 class="service-title">УСЛУГИ</h2>
             <div class="services-wrapper">
-              <div class="service">
-                <p class="lable-service">от 2500₽/м²</p>
-                <img
-                  class="service__img"
-                  src="resurses/planning.png"
-                  alt="карандаш лежит на чертеже"
-                />
-                <p class="service__name">Планировочное решение</p>
-              </div>
-              <div class="service">
-                <p class="lable-service">от 3000₽/м²</p>
-                <img
-                  class="service__img"
-                  src="resurses/design.png"
-                  alt="разноцветные папки"
-                />
-                <p class="service__name">Дизайн-проект</p>
-              </div>
-              <div class="service">
-                <p class="lable-service">от 30 000₽/мес</p>
-                <img
-                  class="service__img"
-                  src="resurses/supervision.png"
-                  alt="чертеж, линейка, рука человека с карандашом"
-                />
-                <p class="service__name">Авторский надзор</p>
-              </div>
-              <div class="service">
-                <p class="lable-service">5% от стоимости</p>
-                <img
-                  class="service__img"
-                  src="resurses/equipment.png"
-                  alt="палеты с продукцией расположены на полках"
-                />
-                <p class="service__name">Комплектация</p>
-              </div>
+              <ul class="services">
+                <li class="service">
+                  <p class="service-sticker">от 2500₽/м²</p>
+                  <img
+                    class="service__img"
+                    src="resurses/planning.png"
+                    alt="карандаш лежит на чертеже"
+                  />
+                  <p class="service__name">Планировочное решение</p>
+                </li>
+                <li class="service">
+                  <p class="service-sticker">от 3000₽/м²</p>
+                  <img
+                    class="service__img"
+                    src="resurses/design.png"
+                    alt="разноцветные папки"
+                  />
+                  <p class="service__name">Дизайн-проект</p>
+                </li>
+                <li class="service">
+                  <p class="service-sticker">от 30 000₽/мес</p>
+                  <img
+                    class="service__img"
+                    src="resurses/supervision.png"
+                    alt="чертеж, линейка, рука человека с карандашом"
+                  />
+                  <p class="service__name">Авторский надзор</p>
+                </li>
+                <li class="service">
+                  <p class="service-sticker">5% от стоимости</p>
+                  <img
+                    class="service__img"
+                    src="resurses/equipment.png"
+                    alt="палеты с продукцией расположены на полках"
+                  />
+                  <p class="service__name">Комплектация</p>
+                </li>
+              </ul>
             </div>
             <button class="js-btn btn-service">Заказать услугу</button>
             <div class="js-popup popup">
@@ -226,8 +230,8 @@
         <div class="container">
           <div class="feedback-inner">
             <h2 class="feedback-title">ОТЗЫВЫ</h2>
-            <div class="row">
-              <div class="col">
+            <ul class="row">
+              <li class="col">
                 <h3 class="feedback-subtitle">Ксения, проект 65 кв.м.</h3>
                 <p class="feedback">
                   Хочу искренне поблагодарить Вас за работу, проделанную на
@@ -242,8 +246,8 @@
                   воплотить красоту, которую Вы нам создали в жизнь и поделиться
                   с Вами результатом!
                 </p>
-              </div>
-              <div class="col">
+              </li>
+              <li class="col">
                 <h3 class="feedback-subtitle">Регина, проект 89 кв.м.</h3>
                 <p class="feedback">
                   Спасибо большое за такой классный проект! Все стильно, круто,
@@ -257,8 +261,8 @@
                   функциональной и красивой квартирой! Будем рекомендовать Вас
                   всем друзьям и знакомым!
                 </p>
-              </div>
-              <div class="col">
+              </li>
+              <li class="col">
                 <h3 class="feedback-subtitle">Яна, проект 120 кв.м.</h3>
                 <p class="feedback">
                   Хотелось бы сказать большое спасибо за проделанную работу! В
@@ -275,8 +279,8 @@
                   стильным и современным! Буду рекомендовать Вас тем, кому еще
                   предстоит это непростое дело - ремонт!
                 </p>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -287,8 +291,8 @@
               <p class="gallery__title">галерея проектов</p>
             </div>
           </div>
-          <div class="gallery__slides">
-            <div class="gallery__slide gallery__slide_active">
+          <ul class="gallery__slides">
+            <li class="gallery__slide gallery__slide_active">
               <div class="gallery__project-exemple bedroom">
                 <div class="container">
                   <p class="gallery__project-subtitle">
@@ -296,8 +300,8 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="gallery__slide">
+            </li>
+            <li class="gallery__slide">
               <div class="gallery__project-exemple living-room">
                 <div class="container">
                   <p class="gallery__project-subtitle">
@@ -305,8 +309,8 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="gallery__slide">
+            </li>
+            <li class="gallery__slide">
               <div class="gallery__project-exemple kitchen-living-room">
                 <div class="container">
                   <p class="gallery__project-subtitle">
@@ -314,8 +318,8 @@
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="gallery__slide">
+            </li>
+            <li class="gallery__slide">
               <div class="gallery__project-exemple kitchen">
                 <div class="container">
                   <p class="gallery__project-subtitle">
@@ -323,8 +327,8 @@
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
           <div class="gallery__controls-wrapper">
             <div class="container">
               <div class="gallery__controls">
@@ -371,11 +375,13 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-inner">
-          <nav class="footer-nav">
-            <a href="#about-us" class="footer__link">О НАС</a>
-            <a href="#projects" class="footer__link">ПРОЕКТЫ</a>
-            <a href="#services" class="footer__link">УСЛУГИ</a>
-            <a href="#contacts" class="footer__link">КОНТАКТЫ</a>
+          <nav class="footer-nav-wrapper">
+            <ul class="footer-nav">
+              <li><a href="#about-us" class="footer__link">О НАС</a></li>
+              <li><a href="#projects" class="footer__link">ПРОЕКТЫ</a></li>
+              <li><a href="#services" class="footer__link">УСЛУГИ</a></li>
+              <li><a href="#contacts" class="footer__link">КОНТАКТЫ</a></li>
+            </ul>
           </nav>
           <p class="copyright">студия дизайна интерьера Метрика — 2023</p>
         </div>

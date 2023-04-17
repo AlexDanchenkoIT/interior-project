@@ -78,6 +78,10 @@
   width: 100%;
 }
 
+.gallery__controls {
+  margin-left: -5px;
+}
+
 .gallery__control-prev {
   padding: 0;
   margin-right: 14px;
@@ -120,6 +124,10 @@
 
   .gallery__slides {
     height: 536px;
+  }
+
+  .gallery__controls {
+    margin-left: 0;
   }
 
   .gallery__controls-wrapper {

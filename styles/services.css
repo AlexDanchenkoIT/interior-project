@@ -5,6 +5,9 @@
 
 .services-wrapper {
   padding-bottom: 95px;
+}
+
+.services {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -16,7 +19,7 @@
   position: relative;
 }
 
-.lable-service {
+.service-sticker {
   padding: 0 20px;
   display: inline-block;
   font-size: 22px;
@@ -75,7 +78,7 @@
     height: 315px;
   }
 
-  .lable-service {
+  .service-sticker {
     padding: 0 27px;
     font-size: 20px;
   }
@@ -104,7 +107,7 @@
     height: 240px;
   }
 
-  .lable-service {
+  .service-sticker {
     padding: 0 23px 0 24px;
     font-size: 14px;
     line-height: 30px;
