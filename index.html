@@ -207,17 +207,25 @@
             <button class="js-btn btn-service">Заказать услугу</button>
             <div class="js-popup popup">
               <div class="js-popup__content popup__content">
-                <p class="popup__title">Заказать услугу</p>
-                <p class="popup__text">
+                <p class="order__title">Заказать услугу</p>
+                <p class="order__text">
                   Заполните форму, мы свяжемся с вами в течение суток
                 </p>
-                <input class="input" type="text" placeholder="Имя" />
                 <input
-                  class="input"
+                  class="input order__input"
+                  type="text"
+                  placeholder="Имя"
+                />
+                <input
+                  class="input order__input"
                   type="email"
                   placeholder="Электронная почта"
                 />
-                <input class="input" type="tel" placeholder="Номер телефона" />
+                <input
+                  class="input order__input"
+                  type="tel"
+                  placeholder="Номер телефона"
+                />
                 <button class="popup__btn-send">Отправить</button>
 
                 <div class="js-popup__close-btn popup__close-btn"></div>

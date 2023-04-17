@@ -5,6 +5,8 @@
 @import "styles/projects.css";
 @import "styles/services.css";
 @import "styles/popup.css";
+@import "styles/input.css";
+@import "styles/order.css";
 @import "styles/feedback.css";
 @import "styles/gallery.css";
 @import "styles/contacts.css";
@@ -45,6 +47,11 @@ h2 {
   font-size: 18px;
   line-height: 25px;
   color: #121212;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
 }
 
 .section-black {
